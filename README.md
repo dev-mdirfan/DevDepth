@@ -1,23 +1,33 @@
-# Nextra Docs Template 
+# DeDepth - Unveiling the Depths of Code and Creativity! 
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+Various projects are well documented by [Mohd Irfan](https://github.com/dev-mdirfan). This is a collection of all the projects and their documentation.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+View our website - [dev-depth.vercel.app](https://dev-depth.vercel.app)
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+[**Live Demo →**](https://dev-depth.vercel.app)
+
+[![](.github/screenshot.png)](https://dev-depth.vercel.app)
 
 ## Quick Start
 
-Click the button to clone this repository and deploy it on Vercel:
+```bash
+# First Time Only
+npm i next react react-dom nextra nextra-theme-docs
+```
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+```bash
+# Run the development server
+npm run dev
+```
 
-## Local Development
+```bash
+# Build for production
+npm run build
+# or
+npm run start
+```
 
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the `MIT` License.
