@@ -1,7 +1,16 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "Home",
+  "django": {
+    "title": "Django Projects",
+    "href": "/django/",
+    "type": "doc"
+  },
+  "another": "Real Time Counter",
+  "docs": {
+    "title": "Docs",
+    "type": "page",
+    "href": "/django/"
+  },
   "about": {
     "title": "About",
     "type": "page"

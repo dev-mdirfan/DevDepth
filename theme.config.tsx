@@ -16,22 +16,22 @@ const config: DocsThemeConfig = {
       </span>
     </>
   ),
-  // logoLink: true,
+  logoLink: true,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/dev-mdirfan/DevDepth',
   },
   chat: {
     link: 'https://discord.com',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/dev-mdirfan/DevDepth',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'DevDepth © 2023',
   },
   useNextSeoProps() {
     const { asPath } = useRouter()
     if (asPath !== '/') {
       return {
-        titleTemplate: '%s - SWR'
+        titleTemplate: '%s - DevDepth'
       }
     }
   },
@@ -44,10 +44,10 @@ const config: DocsThemeConfig = {
     return (
       <>
         <meta property="og:url" content={url} />
-        <meta property="og:title" content={frontMatter.title || 'Nextra'} />
+        <meta property="og:title" content={frontMatter.title || 'DevDepth'} />
         <meta
           property="og:description"
-          content={frontMatter.description || 'The next site builder'}
+          content={frontMatter.description || 'Unveiling the Depths of Code and Creativity!'}
         />
       </>
     )
@@ -57,4 +57,4 @@ const config: DocsThemeConfig = {
 
 }
 
-export default config
+export default config;
