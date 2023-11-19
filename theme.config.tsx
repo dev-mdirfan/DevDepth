@@ -12,7 +12,7 @@ const config: DocsThemeConfig = {
         />
       </svg>
       <span style={{ marginLeft: '.4em', fontWeight: 700 }}>
-        Dev Depth
+        DevDepth
       </span>
     </>
   ),
