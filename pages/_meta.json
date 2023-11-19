@@ -1,24 +1,35 @@
 {
-  "index": "Home",
-  "django": {
-    "title": "Django Projects",
-    "href": "/django/",
-    "type": "doc"
-  },
-  "another": "Real Time Counter",
-  "docs": {
-    "title": "Docs",
+  "index": {
     "type": "page",
-    "href": "/django/"
+    "title": "DevDepth",
+    "display": "hidden",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "docs": {
+    "type": "page",
+    "title": "Documentation",
+    "href": "/docs"
   },
   "about": {
+    "type": "page",
     "title": "About",
-    "type": "page"
+    "theme": {
+      "typesetting": "article"
+    }
   },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
     "href": "https://twitter.com/shuding_",
     "newWindow": true
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
   }
 }
