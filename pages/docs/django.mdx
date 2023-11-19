@@ -1,0 +1,126 @@
+# Django Projects
+
+Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
+
+**Download:**
+
+1. Download and install new version Python from [here](https://www.python.org/downloads).
+2. Download a code editor. I recommend [Visual Studio Code](https://code.visualstudio.com/download).
+3. Download and install [Git](https://git-scm.com/downloads).
+
+**Create virtual environment:**
+
+```bash copy
+python -m venv venv
+```
+
+**Activate virtual environment:**
+
+```bash copy
+venv\Scripts\activate
+```
+
+**Deactivate virtual environment:**
+
+```bash copy
+deactivate
+```
+
+**Install Django:**
+
+Open your terminal and run the following command to install Django.
+
+```bash copy
+pip install django
+```
+
+## Create Project
+
+Django comes with a command-line utility called **django-admin** that lets you interact with Django projects in various ways. You can read all the options available to **django-admin** by running **django-admin help**. We will use **django-admin** to create the skeleton of a new Django project.
+
+**Create a new project:**
+
+```bash copy
+django-admin startproject mysite
+```
+
+**Run the server:**
+
+```bash copy
+python manage.py runserver
+```
+
+**Create a new app:**
+
+```bash copy
+python manage.py startapp blog
+```
+
+**Create migrations:**
+
+```bash copy
+python manage.py makemigrations
+```
+
+**Migrate the database:**
+
+```bash copy
+python manage.py migrate
+```
+
+**Collect static files:**
+
+```bash copy
+python manage.py collectstatic
+```
+
+**Run the tests:**
+
+```bash copy
+python manage.py test
+```
+
+**Create requirements.txt file:**
+
+```bash copy
+pip freeze > requirements.txt
+```
+
+**Install requirements.txt file:**
+
+```bash copy
+pip install -r requirements.txt
+```
+
+**Create a new project with PostgreSQL:**
+
+```bash copy
+django-admin startproject mysite --database=postgresql
+```
+
+**Create a new project with MySQL:**
+
+```bash copy
+django-admin startproject mysite --database=mysql
+```
+
+## Django Admin
+
+Django Admin is a powerful tool for managing data in your app. It’s free and open source.
+
+**Create a superuser:**
+
+```bash copy
+python manage.py createsuperuser
+```
+
+Now, setup your admin username and password configurations:
+
+```yml copy
+Username: admin
+Email address: admin@gmail.com
+Password: yourpassword
+Password (again): yourpassword
+# Superuser created successfully.
+```
+

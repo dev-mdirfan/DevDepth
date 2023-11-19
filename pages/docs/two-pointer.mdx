@@ -1,0 +1,156 @@
+import { Steps, Tabs, Callout } from 'nextra/components'
+
+
+# Two Pointer
+
+In every two pointer question -
+
+1. Sorted array will be given.
+2. You need to calculate some specific numbers that matches some value.
+
+<Steps>
+### Pair with target sum
+
+You are given a sorted array and target sum and you need to find the pair of indices whose sum is equal to target sum.
+
+**Example:**
+
+> **Input:** arr = [2, 4, 8, 7, 9, 12, 14], target_sum = 13
+>
+> **Output:** [1, 4]
+
+<Tabs items={['Python', 'C++', 'Java']}>
+    <Tabs.Tab>
+        <Tabs items={['Brute Force', 'Optimized']}>
+            <Tabs.Tab>
+                ```python filename="python" copy showLineNumbers
+                def pair_with_targetsum(arr, target_sum):
+                    for i in range(len(arr)):
+                        for j in range(i+1, len(arr)):
+                            if arr[i] + arr[j] == target_sum:
+                                return [i, j]
+                    return [-1, -1]
+                
+                arr = [2, 4, 8, 7, 9, 12, 14]
+                target_sum = 13
+                print(pair_with_targetsum(arr, target_sum))
+                ```
+
+                **Time Complexity:** $O(n^2)$
+
+                **Space Complexity:** $O(1)$
+            </Tabs.Tab>
+            <Tabs.Tab>
+                <Callout>
+                    Why the given array is sorted?
+                </Callout>
+                ```python filename="python" copy showLineNumbers
+                def pair_with_targetsum(arr, target_sum):
+                    left, right = 0, len(arr) - 1
+                    while left < right:
+                        current_sum = arr[left] + arr[right]
+                        if current_sum == target_sum:
+                            return [left, right]
+                        if target_sum > current_sum:
+                            left += 1
+                        else:
+                            right -= 1
+                    return [-1, -1]
+                
+                arr = [1, 3, 5, 6, 8, 9] 
+                target_sum = 11 
+                print(pair_with_targetsum(arr, target_sum)) 
+                ```
+
+                **Time Complexity:** $O(n)$
+
+                **Space Complexity:** $O(1)$
+            </Tabs.Tab>
+        </Tabs>
+    </Tabs.Tab>
+    <Tabs.Tab>**npm** is a package manager for the JavaScript programming language.</Tabs.Tab>
+    <Tabs.Tab>**Yarn** is a software packaging system.</Tabs.Tab>
+</Tabs>
+
+### Squaring a sorted array so that it will be sorted array
+
+You are given a sorted array and you need to square each element of the array and return the sorted array.
+
+**Example:**
+
+> **Input:** arr = [-3, -1, 0, 1, 2]
+>
+> **Output:** [0, 1, 1, 4, 9]
+
+<Tabs items={['Python', 'C++', 'Java']}>
+    <Tabs.Tab>
+        <Tabs items={['Brute Force', 'Optimized']}>
+            <Tabs.Tab>
+                ```python filename="python" copy showLineNumbers
+                def make_squares(arr):
+                    squares = []
+                    for num in arr:
+                        squares.append(num * num)
+                    squares.sort()
+                    return squares
+                
+                arr = [-3, -1, 0, 1, 2]
+                print(make_squares(arr))
+                ```
+
+                **Time Complexity:** $O(nlogn)$
+
+                **Space Complexity:** $O(n)$
+            </Tabs.Tab>
+            <Tabs.Tab>
+                ```python filename="python" copy showLineNumbers
+                def make_squares(arr):
+                    squares = [0 for _ in range(len(arr))]
+                    left, right = 0, len(arr) - 1
+                    highest_square_index = len(arr) - 1
+                    while left <= right:
+                        left_square = arr[left] * arr[left]
+                        right_square = arr[right] * arr[right]
+                        if left_square > right_square:
+                            squares[highest_square_index] = left_square
+                            left += 1
+                        else:
+                            squares[highest_square_index] = right_square
+                            right -= 1
+                        highest_square_index -= 1
+                    return squares
+                
+                arr = [-3, -1, 0, 1, 2]
+                print(make_squares(arr))
+                ```
+
+                **Time Complexity:** $O(n)$
+
+                **Space Complexity:** $O(n)$
+            </Tabs.Tab>
+        </Tabs>
+    </Tabs.Tab>
+    <Tabs.Tab>**npm** is a package manager for the JavaScript programming language.</Tabs.Tab>
+    <Tabs.Tab>**Yarn** is a software packaging system.</Tabs.Tab>
+</Tabs>
+
+### Triplet sum to zero
+
+Contents for step 3.
+
+### Count triplet sum less than target
+
+Contents for step 4.
+
+### Triplet sum in a range
+
+Contents for step 5.
+
+### Dutch National Flag
+
+Contents for step 6.
+
+### Backspace String Compare
+
+Contents for step 7.
+</Steps>

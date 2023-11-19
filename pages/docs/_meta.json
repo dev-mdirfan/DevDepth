@@ -1,0 +1,24 @@
+{
+    "index": "Introduction",
+    "another": "Example - Counter",
+    "-- js": {
+        "type": "separator",
+        "title": "Language"
+    },
+    "javascript": "",
+    "-- dsa": {
+        "title": "Data Structures & Algorithms",
+        "type": "separator"
+    },
+    "dsa": "Home",
+    "two-pointer": "Two Pointers",
+    "-- development": {
+        "type": "separator",
+        "title": "Development"
+    },
+    "django": {
+        "title": "Django Projects",
+        "href": "/django/",
+        "type": "doc"
+    }
+}
