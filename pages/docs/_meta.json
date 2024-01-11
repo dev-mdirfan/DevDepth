@@ -20,5 +20,10 @@
         "title": "Django Projects",
         "href": "/django/",
         "type": "doc"
-    }
+    },
+    "-- database": {
+        "type": "separator",
+        "title": "Database"
+    },
+    "dbms": "Home"
 }
